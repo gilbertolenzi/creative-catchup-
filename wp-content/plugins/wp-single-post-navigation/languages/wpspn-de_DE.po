@@ -1,0 +1,81 @@
+# Copyright (C) 2011-2012 WP Single Post Navigation by David Decker of deckerweb.de
+# This file is distributed under the same license as the WP Single Post Navigation Plugin package.
+#
+# Weitere deutsche Sprachdateien fuer WordPress Plugins und Themes sind hier zu finden:
+# --> http://deckerweb.de/sprachdateien/
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Single Post Navigation\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/wp-single-post-navigation?forum_id=10\n"
+"POT-Creation-Date: 2011-12-30 20:00+0100\n"
+"PO-Revision-Date: 2012-01-07 15:37+0100\n"
+"Last-Translator: David Decker <deckerweb.mobil@googlemail.com>\n"
+"Language-Team: DECKERWEB <deckerweb.mobil@googlemail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ wpspn
+#. translators: plugin header field 'Name'
+#: wp-single-post-navigation.php:0
+msgid "WP Single Post Navigation"
+msgstr "WP Single Post Navigation"
+
+#@ wpspn
+#. translators: plugin header field 'PluginURI'
+#: wp-single-post-navigation.php:0
+msgid "http://genesisthemes.de/plugins/wp-single-post-navigation/"
+msgstr "http://genesisthemes.de/plugins/wp-single-post-navigation/"
+
+#@ wpspn
+#. translators: plugin header field 'Description'
+#: wp-single-post-navigation.php:0
+msgid "This plugin adds next & previous navigation links on single posts to have some kind of a browse post by post nav style. Support for several popular theme frameworks and themes is integrated. And you can customize link direction and some parameters via your theme/child theme."
+msgstr "Dieses Plugin fügt vorwärts- &amp; zurück-Navigationslinks bei einzelnen Artikeln hinzu. Dies geschieht so, dass man ähnlich wie bei einem Buch Artikel blättern kann. Unterstützung für mehrere populäre Theme Frameworks und Themes ist integriert. Weiterhin können die Linkrichtung und weitere Parameter via Theme/ Child Theme angepasst werden."
+
+#@ wpspn
+#. translators: plugin header field 'Author'
+#: wp-single-post-navigation.php:0
+msgid "David Decker - DECKERWEB"
+msgstr "David Decker - DECKERWEB.de"
+
+#@ wpspn
+#. translators: plugin header field 'AuthorURI'
+#: wp-single-post-navigation.php:0
+msgid "http://deckerweb.de/"
+msgstr "http://deckerweb.de/"
+
+#@ wpspn
+#. translators: plugin header field 'Version'
+#: wp-single-post-navigation.php:0
+msgid "1.4"
+msgstr "1.4"
+
+#@ wpspn
+#: wp-single-post-navigation.php:47
+msgid "FAQ"
+msgstr "FAQ - Häufige Fragen"
+
+#@ wpspn
+#: wp-single-post-navigation.php:48
+msgid "Support"
+msgstr "Hilfe & Unterstützung (Support)"
+
+#@ wpspn
+#: wp-single-post-navigation.php:49
+msgid "http://genesisthemes.de/en/donate/"
+msgstr "http://genesisthemes.de/spenden/"
+
+#@ wpspn
+#: wp-single-post-navigation.php:49
+msgid "Donate"
+msgstr "Spenden"
+

@@ -1,0 +1,107 @@
+/**
+ * Plugin: WP Single Post Navigation
+ *
+ * @author	David Decker
+ *
+ * @since	1.0
+ * @version	1.4
+ *
+ * @copyright	Copyright 2011-2012, David Decker - DECKERWEB
+ * @license	GPLv2
+ * @link	http://deckerweb.de/
+ * @package	wp-single-post-navigation
+ */
+
+/* Table of Contents
+
+* Main Container for the Prev & Next Links
+* Prev & Next Links Style
+* CSS3 Media Query
+
+*/
+
+/* Main Container for the Prev & Next Links
+------------------------------------------------------------ */
+
+.wpspn-area {
+}
+
+
+/* Prev & Next Links Style
+------------------------------------------------------------ */
+
+#wpspn-prevpost a,
+#wpspn-nextpost a,
+#wpspn-prevpost-reverse a,
+#wpspn-nextpost-reverse a {
+	border-bottom: 1px dotted #ccc;  /* bottom border for link container */
+	border-top: 1px dotted #ccc;  /* top border for link container */
+	color: #999;  /* link color */
+	font-size: 50px;
+	line-height: 80px;
+	padding-bottom: 15px;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	vertical-align: middle;
+	width: 50px;
+	text-decoration: none;
+}
+
+#wpspn-prevpost a:hover,
+#wpspn-nextpost a:hover,
+#wpspn-prevpost-reverse a:hover,
+#wpspn-nextpost-reverse a:hover {
+	color: #000;  /* mouse hover link color */
+	text-decoration: none;
+	background-color: #FFF;
+}
+
+/* Default direction: previous post on left side */
+#wpspn-prevpost a {
+	right: 10px;
+}
+
+/* Default direction: next post on right side */
+#wpspn-nextpost a {
+	left: 10px;
+}
+
+/* Custom, reversed direction: previous post on left side (book-like) */
+#wpspn-prevpost-reverse a {
+	left: 10px;
+}
+
+/* Custom, reversed direction: next post on right side (book-like) */
+#wpspn-nextpost-reverse a {
+	right: 10px;
+}
+
+_#wpspn-prevpost a,
+_#wpspn-nextpost a,
+_#wpspn-prevpost-reverse a,
+_#wpspn-nextpost-reverse a {
+	position: absolute;
+}
+
+/* Theme specific: Twenty Ten hack to remove WP logo image from the browse areas */
+#site-generator #wpspn-nextpost a,
+#site-generator #wpspn-prevpost a,
+#site-generator #wpspn-nextpost-reverse a,
+#site-generator #wpspn-prevpost-reverse a {
+	background: 0 none !important;
+}
+
+
+/* CSS3 Media Query - Hide from smaller displays/ viewports
+------------------------------------------------------------ */
+
+@media screen and (max-width: 1100px) {
+	.wpspn-area,
+	#wpspn-prevpost,
+	#wpspn-nextpost,
+	#wpspn-prevpost-reverse,
+	#wpspn-nextpost-reverse {
+		display: none;
+	}
+}
