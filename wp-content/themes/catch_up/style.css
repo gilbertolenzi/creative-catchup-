@@ -214,33 +214,8 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
 
 #page-wrap {width: 90%; margin: 20px auto; min-height: 100%;}
 
-.home #page-wrap {  width: 90%; text-align: center; margin: 0 auto; margin-top: 200px}
-
 #header    {width: 100%; height: 120px; position: fixed; top: 0; left: 0; background-color: #fff; box-shadow: 0px 2px 10px #888; margin-top: 50px; z-index: 99999;}
 #header h1    {width: 460px; background-color: #fff; box-shadow: 0px 2px 10px #888; text-align: center; margin: 0 auto; padding: 10px 20px; margin-top: -20px; display: block;}
-
-.border  {border: 1px solid #888; padding:  0 0 15px 0; display: block; width: 250px; }
-
-
-.home .post { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
-.home .post:hover { box-shadow: 0px 2px 10px #000;}
-.home .post footer { text-align: center; margin: 0 auto; margin-top: 10px;}
-.home .post footer.postmetadata { margin-top: -4px !important;}
-.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 20px; line-height: 33px; letter-spacing:0.04em; color: #000; }
-.home .post h2 a, .page .post h2 a {color: #000; text-decoration: none; }
-
-.home .post .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 15px 0 0 0; text-transform: uppercase; }
-.home .post .postmetadata a {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 16px; color:#000; text-transform: uppercase; font-weight: bold; text-decoration: none; letter-spacing: 0..8em;}
-.home .post .postmetadata a:hover {color:#000; text-decoration: underline;}
-
-
-
-.home .entry   { width: 250px; text-align: center; margin: 0 auto; border: 1px solid #434343; overflow: hidden; margin-left:-2px ; }
-.home .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
-.home .entry img {  margin-bottom: -6px;}
-.home .entry p { display: none; }
-
-
 #header .menu-header {  width: 530px;  height: 120px; position: absolute; right: 0; top: 0;}
 #header .topnav { position: relative; float: left; width: 50%; height: 50px; margin-top: -125px}
 
@@ -265,6 +240,31 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
    text-decoration: none;
    padding: 20px;
 }
+
+.border  {border: 1px solid #888; padding:  0 0 15px 0; display: block; width: 250px; }
+
+.home #page-wrap {  width: 90%; text-align: center; margin: 0 auto; margin-top: 200px}
+.home .post { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
+.home .post:hover {
+  -webkit-transition: all 300ms ease-out;
+  -webkit-transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-out;
+  box-shadow: 0px 1px 5px 5px #888;
+}
+.home .post footer { text-align: center; margin: 0 auto; margin-top: 10px;}
+.home .post footer.postmetadata { margin-top: -4px !important;}
+.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 20px; line-height: 33px; letter-spacing:0.04em; color: #000; }
+.home .post h2 a, .page .post h2 a {color: #000; text-decoration: none; }
+
+.home .post .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 15px 0 0 0; text-transform: uppercase; }
+.home .post .postmetadata a {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 16px; color:#000; text-transform: uppercase; font-weight: bold; text-decoration: none; letter-spacing: 0..8em;}
+.home .post .postmetadata a:hover {color:#000; text-decoration: underline;}
+
+.home .entry   { width: 250px; text-align: center; margin: 0 auto; border: 1px solid #434343; overflow: hidden; margin-left:-2px ; }
+.home .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
+.home .entry img {  margin-bottom: -6px;}
+.home .entry p { display: none; }
+
 .home #footer, .single #footer, #header .description, .page #footer, .home .navigation {
   display: none;
 }
@@ -530,7 +530,6 @@ a.comment-reply-link {
 	
 }
 
-
 /*----------------------------------------------------------------------------*/
 /* PAGE TEMPLATE TEMPORARY STYLE----------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -610,3 +609,88 @@ margin-top: -1px;
 .page .entry-content footer.meta {  text-align: center; margin: 0 auto; padding: 20px 0;}
 
 .page .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 18px; color:#000; text-decoration: none; text-transform: uppercase; text-align: center; margin: 0 auto;padding: 15px 0 0 0;}
+
+
+
+
+
+
+/*
+| --------------------------------------------------------
+| File        : css-theme.css
+| Project     : Special Recent Posts plugin for Wordpress
+| Version     : 1.9.4
+| Description : Specific widget stylesheet for current theme
+| Author      : Luca Grandicelli
+| Author URL  : http://www.lucagrandicelli.com
+| Plugin URL  : http://www.lucagrandicelli.com/special-recent-posts-plugin-for-wordpress/
+| --------------------------------------------------------
+*/
+
+div.srp-widget-container {
+  width: 100%;
+  display: block;
+}
+
+div.srp-widget-container h3.widget-title{
+	margin-bottom : 10px;
+}
+
+div.srp-widget-singlepost {
+	padding: 0px 0px 30px 0px;
+}
+
+div.srp-thumbnail-box {
+  width: 240px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 2px 10px #a0a0a0;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 12px;
+  -mox-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border:1px solid #FFF;
+}
+  
+div.srp-content-box {
+	vertical-align : top;
+	padding: 20px 10px;
+	font-size: 16px;
+	color:#000;
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	display: block;
+	position: relative;
+	  background: url('_/img/arrow_recent.png') no-repeat 50% 0px;
+}
+
+p.srp-widget-excerpt {
+	margin: 0px;
+}
+
+a.srp-widget-link {
+  margin: 20px 0px 30px 0px;
+}
+
+img.srp-widget-thmb {
+  width: 240px;
+  height: auto;
+  display: block;
+  min-height: auto;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.srp-widget-title {
+  padding: 20px 0px 5px 0px;
+}
+.srp-widget-title span {
+
+}
+.srp-widget-title-link {
+  text-decoration: underline;
+  color:#000;
+  font-weight:bold;
+  text-transform:uppercase;
+}

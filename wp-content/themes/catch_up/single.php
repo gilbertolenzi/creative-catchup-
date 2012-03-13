@@ -28,9 +28,7 @@
   
   			</div>
 			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-	    	
+			<?php edit_post_link('Edit this entry'); ?>
 		</article>
     <?php get_sidebar(); ?> 
     <div class="navigation"><p><?php posts_nav_link(); ?></p></div>	
