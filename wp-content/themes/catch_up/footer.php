@@ -1,9 +1,8 @@
-<footer id="footer" class="source-org vcard copyright">
+		<footer id="footer" class="source-org vcard copyright">
 			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
 		</footer>
 		<div id="back_to_top"><a href="#top">SCROLL TO THE TOP</a></div>
-
-	</div>
+	</div><!-- end of the page wrap -->
 
 	<?php wp_footer(); ?>
 

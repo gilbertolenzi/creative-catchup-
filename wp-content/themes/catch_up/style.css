@@ -12,7 +12,6 @@ Version: 0.1
 	We have learned much from/been inspired by/taken code where offered from:
 	
 	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
 	and the HTML5 Boilerplate	:: http://html5boilerplate.com
 	
 	Special thanks: The Wordpress theme owes its start to an empty theme authored 
@@ -229,7 +228,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 #header h1    {width: 460px; background-color: #fff; box-shadow: 0px 2px 10px #888; text-align: center; margin: 0 auto; padding: 10px 20px; margin-top: -20px; display: block;}
 
-
 .home .post { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
 
 .border  {border: 1px solid #888; padding:  0 0 15px 0; display: block; width: 250px; }
@@ -241,7 +239,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 .home .post footer.postmetadata { margin-top: -4px !important;}
 
 
-.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 0; line-height: 33px; letter-spacing:0.04em; color: #000; }
+.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 10px; line-height: 33px; letter-spacing:0.04em; color: #000; }
 
 .home .post h2 a, .page .post h2 a {color: #000; text-decoration: none; }
 
@@ -256,11 +254,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 .home .post .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 15px 0 0 0; text-transform: uppercase; }
 .home .post .postmetadata a {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 16px; color:#000; text-transform: uppercase; font-weight: bold; text-decoration: none; letter-spacing: 0..8em;}
 .home .post .postmetadata a:hover {color:#000; text-decoration: underline;}
-
-
-.post {}
-
-
 
 #header .menu-header {
    width: 530px;
@@ -336,9 +329,9 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 #s {}
 #searchsubmt {}
 
-
-/* SINGLE PAGE STYLE
--------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/* SINGLE PAGE STYLE----------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 .single #page-wrap { 
   width: 960px;
   text-align: center;
@@ -371,7 +364,6 @@ margin-top: -1px;
   float: left;
   display: block;
   margin-top: 250px;
-  display: none;
 }
 
 .single article {
@@ -402,7 +394,6 @@ margin-top: -1px;
 }
 
 .single .entry-title   {padding: 10px 20px; margin-top: -20px; display: block; font-family: 'OstrichSansMedium'; font-size: 42px; padding: 25px 0; line-height: 52px; letter-spacing: 0.04em; text-align: center; color: #000;}
-
 .single .entry-content p { font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 10px 0; text-align: left}
 .single .entry-content span.byline {
   padding: 10px 0;
@@ -538,8 +529,11 @@ a.comment-reply-link {
 	
 }
 
-/*PAGE TEMPLATE TEMPORARY STYLE
--------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+/* PAGE TEMPLATE TEMPORARY STYLE----------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
 .page #page-wrap { 
   width: 960px;
   text-align: center;
