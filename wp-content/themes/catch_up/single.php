@@ -32,14 +32,12 @@
 			<?php edit_post_link('Edit this entry','','.'); ?>
 	    	
 		</article>
-      <div class="navigation"><p><?php posts_nav_link(); ?></p></div>	
-		<div class="comment_wrap">
-        <?php comments_template(); ?>	
+    <?php get_sidebar(); ?> 
+    <div class="navigation"><p><?php posts_nav_link(); ?></p></div>	
+    <div class="comment_wrap">
+      <?php comments_template(); ?>	
 	  </div>
 
 	<?php endwhile; endif; ?>
-
-<?php get_sidebar(); ?>	
-
 
 <?php get_footer(); ?>

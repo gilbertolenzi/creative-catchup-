@@ -1,0 +1,77 @@
+/*
+| --------------------------------------------------------
+| File        : css-theme.css
+| Project     : Special Recent Posts plugin for Wordpress
+| Version     : 1.9.4
+| Description : Specific widget stylesheet for current theme
+| Author      : Luca Grandicelli
+| Author URL  : http://www.lucagrandicelli.com
+| Plugin URL  : http://www.lucagrandicelli.com/special-recent-posts-plugin-for-wordpress/
+| --------------------------------------------------------
+*/
+
+div.srp-widget-container {
+  width: 1OO%;
+  display: block;
+}
+
+div.srp-widget-container h3.widget-title{
+	margin-bottom : 10px;
+}
+
+div.srp-widget-singlepost {
+	padding: 0px 0px 30px 0px;
+}
+
+div.srp-thumbnail-box {
+  width: 240px;
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  padding: 20px;
+  box-shadow: 0px 2px 10px #888;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 12px;
+  -mox-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border:1px solid #D1D3D4;
+}
+
+div.srp-content-box {
+	vertical-align : top;
+	padding: 20px 10px;
+	font-size: 16px;
+	color:#000;
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	display: block;
+	position: relative;
+}
+div.srp-thumbnail-box:after {
+  ccontent: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 12px solid transparent;
+    border-top-color: #E6E7E8;
+    top: 100%;
+    left: 50%;
+}
+
+p.srp-widget-excerpt {
+	margin: 0px;
+}
+
+a.srp-widget-link {
+
+}
+
+img.srp-widget-thmb {
+  width: 240px;
+  height: auto;
+  display: block;
+  min-height: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+

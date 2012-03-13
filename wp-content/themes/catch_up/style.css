@@ -129,9 +129,9 @@ button {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }  
 
 
-
-/* Ok, this is where the fun starts.
--------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/* Ok, this is where the fun starts.---------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
 
 /* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
 body {font: 22px Helmet, Freesans, sans-serif;
@@ -142,12 +142,8 @@ body {font: 22px Helmet, Freesans, sans-serif;
   width: 100%;
 }
 
-/* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
-
 /* we like off-black for text */
 body, select, input, textarea {color: #888888;}
-
 
 input {
   width: 350px;
@@ -213,63 +209,40 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
     font-style: normal;
 }
 
+a.post-edit-link { color: #69f; font-size: 16px; text-decoration: underline; display: block; padding:15px 0; margin-top:20px;}
+a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; text-decoration: none;}
 
 #page-wrap {width: 90%; margin: 20px auto; min-height: 100%;}
 
-.home #page-wrap {
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 200px
-}
-
+.home #page-wrap {  width: 90%; text-align: center; margin: 0 auto; margin-top: 200px}
 
 #header    {width: 100%; height: 120px; position: fixed; top: 0; left: 0; background-color: #fff; box-shadow: 0px 2px 10px #888; margin-top: 50px; z-index: 99999;}
-
 #header h1    {width: 460px; background-color: #fff; box-shadow: 0px 2px 10px #888; text-align: center; margin: 0 auto; padding: 10px 20px; margin-top: -20px; display: block;}
-
-.home .post { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
 
 .border  {border: 1px solid #888; padding:  0 0 15px 0; display: block; width: 250px; }
 
+
+.home .post { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
 .home .post:hover { box-shadow: 0px 2px 10px #000;}
-
 .home .post footer { text-align: center; margin: 0 auto; margin-top: 10px;}
-
 .home .post footer.postmetadata { margin-top: -4px !important;}
-
-
-.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 10px; line-height: 33px; letter-spacing:0.04em; color: #000; }
-
+.home .post h2, .page .post h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 20px; line-height: 33px; letter-spacing:0.04em; color: #000; }
 .home .post h2 a, .page .post h2 a {color: #000; text-decoration: none; }
-
-.home .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
-
-.home .entry   { width: 250px; text-align: center; margin: 0 auto; border: 1px solid #434343; overflow: hidden; margin-left:-2px ; }
-
-.home .entry img {  margin-bottom: -6px;}
-
-.home .entry p { display: none; }
 
 .home .post .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 15px 0 0 0; text-transform: uppercase; }
 .home .post .postmetadata a {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 16px; color:#000; text-transform: uppercase; font-weight: bold; text-decoration: none; letter-spacing: 0..8em;}
 .home .post .postmetadata a:hover {color:#000; text-decoration: underline;}
 
-#header .menu-header {
-   width: 530px;
-   height: 120px;
-   position: absolute;
-   right: 0;
-   top: 0;
-}
 
-#header .topnav {
-  position: relative;
-  float: left;
-  width: 50%;
-  height: 50px;
-  margin-top: -125px
-}
+
+.home .entry   { width: 250px; text-align: center; margin: 0 auto; border: 1px solid #434343; overflow: hidden; margin-left:-2px ; }
+.home .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
+.home .entry img {  margin-bottom: -6px;}
+.home .entry p { display: none; }
+
+
+#header .menu-header {  width: 530px;  height: 120px; position: absolute; right: 0; top: 0;}
+#header .topnav { position: relative; float: left; width: 50%; height: 50px; margin-top: -125px}
 
 #header .topnav ul {
   text-align:  right;
@@ -291,9 +264,8 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
    color:#000;
    text-decoration: none;
    padding: 20px;
-   
 }
-.home #sidebar, .home #footer, .single #footer, #header .description, .page #footer, .home .navigation {
+.home #footer, .single #footer, #header .description, .page #footer, .home .navigation {
   display: none;
 }
 
@@ -312,18 +284,9 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 #back_to_top a:hover {text-decoration: underline;}
 
-.entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
-
 #meta {}
 .postmetadata {}
 
-#sidebar {}
-
-.navigation {}
-.next-posts {}
-.prev-posts {}
 
 #searchform {}
 #s {}
@@ -337,6 +300,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
   text-align: center;
   margin: 0 auto;
   padding: 0 !important;
+  clear: both;
 }
 .single .border  {width: 560px; border: 1px solid #888; display: block; padding: 20px; border-top: 0; text-align: center; margin: 0 auto;
 }
@@ -360,15 +324,53 @@ margin-top: -1px;
 }
 
 .single #sidebar {
-  width: 250px;
-  float: left;
+  width: 280px;
+  float: right;
   display: block;
   margin-top: 250px;
 }
 
+.single #sidebar h2 {
+  background: #E6E7E8;
+  border-radius: 12px;
+  -mox-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-family: 'OstrichSansMedium';
+  font-size: 34px;
+  line-height: 32px;
+  letter-spacing:0.04em;
+  color: #555;
+  padding:50px 0;
+  border: 1px solid #D1D3D4;
+  position: relative;
+  margin: 0px 0px 40px 0px;
+  width: 280px;
+}
+.single #sidebar h2:after {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 10px solid transparent;
+  border-top-color: #E6E7E8;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+.single #sidebar h2:before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 12px solid transparent;
+  border-top-color: #D1D3D4;
+  top: 100%;
+  left: 50%;
+  margin-left: -9px;
+}
+
 .single article {
   float: left;
-  display: block;
   padding: 20px;
   margin-top: 250px;
   font-size: 14px;
@@ -377,7 +379,6 @@ margin-top: -1px;
   margin-right: 25px;
   background-color: #fff;
   border-radius: 4px;
-  
 }
 .single .comment_wrap {
   float: left;
@@ -480,7 +481,7 @@ a.comment-reply-link {
   margin-bottom: 20px;
 }
 
-/* Print styles!
+/* Print styles - TODO AT SOME POINT
 -------------------------------------------------------------------------------*/
 @media print {
 
