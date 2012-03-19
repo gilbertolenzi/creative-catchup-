@@ -7,12 +7,12 @@ $(document).ready(function (){
 
   $(function(){
     
-    var $container = $('.home #page-wrap');
+    var $container = $('#page-wrap');
     
     $container.imagesLoaded(function(){
       $container.masonry({
-        itemSelector: '.home .post',
-        columnWidth: 30,
+        itemSelector: '#page-wrap  article.post',
+        columnWidth: 0,
         animationOptions: {
         	    duration: 1500
         	  }
@@ -20,11 +20,11 @@ $(document).ready(function (){
     });
     
     $container.infinitescroll({
-      navSelector  : '.next-posts',    // selector for the paged navigation 
-      nextSelector : '.next-posts a',  // selector for the NEXT link (to page 2)
-      itemSelector : '.box',     // selector for all items you'll retrieve
+      navSelector  : 'div.navigation',    // selector for the paged navigation 
+      nextSelector : 'div.navigation a:first',  // selector for the NEXT link (to page 2)
+      itemSelector : '#page-wrap  article.post',     // selector for all items you'll retrieve
       loading: {
-          finishedMsg: 'No more pages to load.',
+          finishedMsg: 'no more pages to load.',
           img: 'http://i.imgur.com/6RMhx.gif'
         }
       },

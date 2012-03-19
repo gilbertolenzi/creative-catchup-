@@ -113,6 +113,6 @@
 		<header id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/_/img/creative_catchup.png" alt="<?php bloginfo('name'); ?>"/></a></h1>
 			<div class="description"><?php bloginfo('description'); ?></div>
-			<div class="topnav"><?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?></div>
 		</header>
+		<div class="topnav"><?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?></div>
 
