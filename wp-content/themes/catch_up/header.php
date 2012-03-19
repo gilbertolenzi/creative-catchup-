@@ -96,6 +96,7 @@
 	
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/modernizr-1.7.min.js"></script>
+	<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

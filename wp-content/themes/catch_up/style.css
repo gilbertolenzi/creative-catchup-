@@ -225,6 +225,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   top: 80px;
   z-index: 99999;
   padding-right: 41%;
+  right: 53%;
 }
 
 .topnav ul {
@@ -232,14 +233,16 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   position: absolute;
   width: 300px;
   margin-right: 160px;
-  background: url('_/img/line_trough_menu.gif') no-repeat 10px 50px;
+  background: url('_/img/line_trough_menu.gif') no-repeat 0px 50px;
   right: 0;
 }
 
 .topnav ul li {
   display: block;
 }
-
+.topnav ul li:first-child a{
+  padding-left: 0;
+}
 .topnav ul li a {
    float: left ;
    display: block;
@@ -317,16 +320,27 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   clear: both;
 }
 .single .topnav {
-  padding-right: 26%;
+  right: 53%;
+  position: fixed;
 }
-.single .border  {width: 560px; border: 1px solid #888; display: block; padding: 20px; border-top: 0; text-align: center; margin: 0 auto;
+.single .border  {
+  width: 560px;
+  border: 1px solid #888;
+  display: block;
+  padding: 20px;
+  border-top: 0;
+  text-align: center;
+  margin: 0 auto;
 }
-.single .border_no_pad {width: 600px; border: 1px solid #888; border-bottom: 0;}
+.single .border_no_pad {
+  width: 600px;
+  border: 1px solid #888;
+  border-bottom: 0;}
 
 .single #post-thumbnail { border: 2px solid black;
-width: 600px;
-margin-left: -2px;
-margin-top: -1px;
+  width: 600px;
+  margin-left: -2px;
+  margin-top: -1px;
 }
 .single #post-thumbnail img {
   margin-bottom: -5px;  
@@ -590,6 +604,9 @@ a.comment-reply-link {
   }
   #sidebar, footer {
     display:none !important;
+  }
+  #respond h2 {
+    width:90%;
   }
 }
 
