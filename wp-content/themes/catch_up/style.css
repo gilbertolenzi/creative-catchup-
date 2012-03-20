@@ -410,6 +410,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   margin-right: 25px;
   background-color: #fff;
   border-radius: 4px;
+  position: relative;
 }
 .single .comment_wrap {
   float: left;
@@ -424,7 +425,6 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   border-radius: 4px;
   width: 960px;
 }
-
 .single .entry-title   {padding: 10px 20px; margin-top: -20px; display: block; font-family: 'OstrichSansMedium'; font-size: 42px; padding: 25px 0; line-height: 52px; letter-spacing: 0.04em; text-align: center; color: #000;}
 .single .entry-content p { font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 10px 0; text-align: left}
 .single .entry-content span.byline {
@@ -433,6 +433,35 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   margin: 0 auto;
   display: block;
 }
+.single .entry-content blockquote {
+  width: 40%;
+  display: block;
+  float: left;
+  padding: 20px;
+  margin: 20px 20px 20px 0px;
+  background-color: #000;
+  quotes: "«" "»" "'" "'";
+}
+.single .entry-content blockquote p {
+  color: #fff;
+  font-family: 'OstrichSansMedium', 'ostrich-regular-webfont', helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing:0.04em;
+}
+.single .entry-content ul {
+  text-align: left;
+  padding-left: 20px;
+  list-style:square url("_/img/square_list_style.gif");
+}
+.single .entry-content ul li {
+  padding: 0.25em 0 0.25em 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+}
+
 .single .entry-content span.byline a {
   font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 22px; color:#000; text-decoration: none;
   height: 32px;
@@ -525,7 +554,6 @@ a.comment-reply-link {
 -------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 380px) and (max-width: 700px) {
-	
   .border  {
     border: 1px solid #888;
     padding:  0 0 15px 0;
@@ -617,7 +645,6 @@ a.comment-reply-link {
     width:90%;
   }
 }
-
 @media all and (orientation: portrait) {
 	
 }

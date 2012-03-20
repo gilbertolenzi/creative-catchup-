@@ -7,11 +7,11 @@ $(document).ready(function (){
 
   $(function(){
     
-    var $container = $('#page-wrap');
+    var $container = $('.home #page-wrap');
     
     $container.imagesLoaded(function(){
       $container.masonry({
-        itemSelector: '#page-wrap  article.post',
+        itemSelector: '.home #page-wrap  article.post',
         columnWidth: 0,
         animationOptions: {
         	    duration: 1500
