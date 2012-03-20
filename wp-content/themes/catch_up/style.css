@@ -570,6 +570,8 @@ a.comment-reply-link {
     position: relative;
     width: 100%;
     padding: 0 !important;
+    right: 0 !important;
+    left: 10% !important;
   }
   .topnav ul {
     width: 100%;
