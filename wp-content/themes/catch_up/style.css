@@ -548,6 +548,13 @@ a.comment-reply-link {
   }
   .entry img {
     width: 100%;
+    height:auto;
+    min-height: auto;
+  }
+  .single #post-thumbnail img {
+    width: 100%;
+    height:auto;
+    min-height: auto; 
   }
   #page-wrap {
     width: 95% !important;
@@ -582,7 +589,6 @@ a.comment-reply-link {
   .single .border {
     width: 100% !important;
     padding: 0%;
-
   }
   .single .border_no_pad {
     width: 100% !important;
