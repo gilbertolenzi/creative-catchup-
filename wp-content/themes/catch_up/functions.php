@@ -40,11 +40,12 @@
     		'before_title'  => '<h2>',
     		'after_title'   => '</h2>'
     	));
+        register_sidebar ('custom'); 
     }
     
-    add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
     if ( function_exists( 'add_theme_support' ) ) { 
       add_theme_support( 'post-thumbnails' ); 
+      add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
     }
   
 ?>

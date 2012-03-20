@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
       <div class="border">
       <div class="entry">
         <?php the_post_thumbnail('medium'); ?>
@@ -15,7 +15,7 @@
 				<a href="<?php the_permalink() ?>">view now >></a>
 			</footer>
       </div>
-		</article>
+	</article>
 
 	<?php endwhile; ?>
 
