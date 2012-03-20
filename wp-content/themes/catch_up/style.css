@@ -425,8 +425,67 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   border-radius: 4px;
   width: 960px;
 }
-.single .entry-title   {padding: 10px 20px; margin-top: -20px; display: block; font-family: 'OstrichSansMedium'; font-size: 42px; padding: 25px 0; line-height: 52px; letter-spacing: 0.04em; text-align: center; color: #000;}
-.single .entry-content p { font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 10px 0; text-align: left}
+.single .entry-title   {
+  padding: 10px 20px;
+  margin-top: -20px;
+  display: block;
+  font-family: 'OstrichSansMedium';
+  font-size: 42px;
+  padding: 25px 0;
+  line-height: 52px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #000;
+}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  color: #000;
+  font-family: 'OstrichSansMedium', ostrich-regular-webfont, Helvetica, sans-serif;
+  text-align: left;
+  }  
+.entry-content h1 {
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  padding: 20px 0;
+}
+.entry-content h2 {
+  font-size: 34px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  padding: 15px 0;
+}
+.entry-content h3 {
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  padding: 15px 0;
+}
+.entry-content h4 {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  padding: 10px 0;
+}
+.entry-content h5 {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  padding: 10px 0;
+}
+.entry-content h6 {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  padding: 10px 0;
+}
+.single .entry-content p {
+  font-family: 'Helvetica neue', helvetica, sans-serif;
+  font-size: 15px;
+  color:#000;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: left
+}
 .single .entry-content span.byline {
   padding: 10px 0;
   text-align: center;
