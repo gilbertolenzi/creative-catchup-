@@ -22,7 +22,7 @@
   			
   			<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
   				
-  			<?php the_tags( '<p class="tags">Tags:', ', ', '</p>'); ?>
+  			<?php the_tags('<p class="tags">','','</p>'); ?>
           
   	  	<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
   
@@ -33,7 +33,7 @@
     <?php get_sidebar(); ?> 
     <div class="navigation"><p><?php posts_nav_link(); ?></p></div>	
     <div class="comment_wrap">
-      <?php comments_template(); ?>	
+      <?php comments_template(); ?>
 	  </div>
 
 	<?php endwhile; endif; ?>
