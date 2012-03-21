@@ -509,6 +509,27 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   text-align: center;
   color: #000;
 }
+.single .entry-content .tags a {
+  font-size:14px;
+  color: #fff;
+  background:#000;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  padding: 2px 4px;
+  float: right;
+  border:1px solid #fff;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  text-align: right;
+}
+.single .entry-content .tags a:hover {
+  font-size:14px;
+  color: #000;
+  background:#fff;
+  border:1px solid #000;
+  text-decoration:none;
+}
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   color: #000;
   font-family: 'OstrichSansMedium', ostrich-regular-webfont, Helvetica, sans-serif;

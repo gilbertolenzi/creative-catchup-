@@ -22,7 +22,7 @@
   			
   			<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
   				
-  			<?php the_tags( 'Tags: ', ', ', ''); ?>
+  			<?php the_tags( '<p class="tags">Tags:', ', ', '</p>'); ?>
           
   	  	<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
   
