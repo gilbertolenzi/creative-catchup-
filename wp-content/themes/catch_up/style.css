@@ -258,7 +258,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   text-align: right;
   position: absolute;
   width: 370px;
-  margin-right: 160px;
+  margin-right: 200px;
   background: url('_/img/line_trough_menu.gif') no-repeat 0px 50px;
   right: 0;
 }
@@ -310,7 +310,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
 .home .entry img {  margin-bottom: -6px;}
 .home .entry p { display: none; }
 
-#header .description, .home .navigation {
+#header .description, .home .navigation, .search .navigation {
   display: none;
 }
 
@@ -349,7 +349,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
 
 
 #s {
-  width: 215px;
+  width: 210px;
   height: 23px !important;
   display: block;
   float: left;
@@ -372,7 +372,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   margin: 0;
   padding: 0;
   border:0;
-  background: url('_/img/search_icns.png') no-repeat 2px -4px;
+  background: url('_/img/search_icns.png') no-repeat 6px -4px;
 }
 #searchsubmit:hover {
   background-color: #000;

@@ -15,6 +15,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.infinitescroll.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.masonry.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery.preloader.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.

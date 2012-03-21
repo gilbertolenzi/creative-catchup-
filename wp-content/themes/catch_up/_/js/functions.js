@@ -7,18 +7,17 @@ $(document).ready(function (){
 
   $(function(){
     
-    var $container = $('.home #page-wrap');
+    var $container = $('.home #page-wrap, .search #page-wrap');
     
     $container.imagesLoaded(function(){
       $container.masonry({
-        itemSelector: '.home #page-wrap  article.post',
+        itemSelector: '#page-wrap  article.post',
         columnWidth: 0,
         animationOptions: {
         	    duration: 1500
         	  }
       });
     });
-    
     $container.infinitescroll({
       navSelector  : 'div.navigation',    // selector for the paged navigation 
       nextSelector : 'div.navigation a:first',  // selector for the NEXT link (to page 2)
@@ -88,6 +87,7 @@ $(document).ready(function (){
   	    }
   	    return [];
   	  }
+      $("#page-wrap").preloader();
 
 });
 
