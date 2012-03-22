@@ -47,19 +47,30 @@
       add_theme_support( 'post-thumbnails' ); 
       add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
     }
-/*
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-    register_post_type( 'fold',
+    add_action( 'init', 'create_fold' );
+    function create_fold() {
+      $labels = array(
+        'name' => _x('fold', 'post type general name'),
+        'singular_name' => _x('Fold', 'post type singular name'),
+        'add_new' => _x('Add New', 'Fold'),
+        'add_new_item' => __('Add New Fold'),
+        'edit_item' => __('Edit Fold'),
+        'new_item' => __('New Fold'),
+        'view_item' => __('View Fold'),
+        'search_items' => __('Search Fold'),
+        'not_found' =>  __('No Fold has being found'),
+        'not_found_in_trash' => __('No Fold found in Trash'),
+        'parent_item_colon' => ''
+      );
+    
+      $supports = array('title', 'editor', 'thumbnail');
+    
+      register_post_type( 'fold',
         array(
-            'labels' => array(
-                'name' => __( 'The Fold' ),
-                'singular_name' => __( 'Fold' )
-            ),
-        'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'fold')
+          'labels' => $labels,
+          'public' => true,
+          'supports' => $supports
         )
-    );
-}*/
+      );
+    }
 ?>

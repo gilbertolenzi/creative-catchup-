@@ -243,7 +243,6 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   font-size:12px;
 }
 
-
 .topnav {
   position: fixed;
   float: left;
@@ -309,6 +308,35 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
 .home .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
 .home .entry img {  margin-bottom: -6px;}
 .home .entry p { display: none; }
+
+/*----------------------------------------------------------------------------*/
+/* ------ PAGE STYLE----------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.page #page-wrap {  width: 90%; text-align: center; margin: 0 auto; margin-top: 200px}
+.page .fold { height: auto; background-color: #fff; float: left; margin: 20px; overflow: hidden; padding: 12px; text-align: center; box-shadow: 0px 2px 10px #888; border-radius: 4px;}
+.page .fold:hover {
+  -webkit-transition: all 300ms ease-out;
+  -webkit-transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-out;
+  box-shadow: 0px 1px 5px 5px #888;
+}
+.page .fold footer { text-align: center; margin: 0 auto; margin-top: 10px;}
+.page .fold footer.postmetadata { margin-top: -4px !important;}
+.page .fold h2, .page .fold h2 { font-family: 'OstrichSansMedium'; font-size: 36px; padding: 15px 20px; line-height: 33px; letter-spacing:0.04em; color: #000; }
+.page .fold h2 a, .page .fold h2 a {color: #000; text-decoration: none; }
+
+.page .fold .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 15px 0 0 0; text-transform: uppercase; }
+.page .fold .postmetadata a {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 16px; color:#000; text-transform: uppercase; font-weight: bold; text-decoration: none; letter-spacing: 0..8em;}
+.page .fold .postmetadata a:hover {color:#000; text-decoration: underline;}
+
+.page .entry   { width: 250px; text-align: center; margin: 0 auto; border: 1px solid #434343; overflow: hidden; margin-left:-2px ; }
+.page .entry a { overflow: hidden; display: block; text-align: left; margin: 0; margin-bottom: -6px;}
+.page .entry img {  margin-bottom: -6px;}
+.page .entry p { display: none; }
+
+/*----------------------------------------------------------------------------*/
+/* ------ END PAGE STYLE------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 
 #header .description, .home .navigation, .search .navigation {
   display: none;
@@ -710,7 +738,6 @@ a.comment-reply-link {
 
 }
 
-
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
@@ -816,89 +843,6 @@ a.comment-reply-link {
 @media all and (orientation: landscape) {
 	
 }
-
-/*----------------------------------------------------------------------------*/
-/* PAGE TEMPLATE TEMPORARY STYLE----------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-
-.page #page-wrap { 
-  width: 960px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 !important;
-}
-.page .topnav {
-  padding-right:26%;
-}
-.page .border  {width: 560px; border: 1px solid #888; display: block; padding: 20px; border-top: 0; text-align: center; margin: 0 auto;
-}
-.page .border_no_pad {width: 600px; border: 1px solid #888; border-bottom: 0;}
-
-.page #post-thumbnail { border: 2px solid black;
-width: 600px;
-margin-left: -2px;
-margin-top: -1px;
-}
-.page #post-thumbnail img {
-  margin-bottom: -5px;  
-}
-
-.page #sidebar {
-  width: 250px;
-  float: left;
-  display: block;
-  margin-top: 250px;
-  display: none;
-}
-
-.page article {
-  float: left;
-  display: block;
-  padding: 20px;
-  margin-top: 250px;
-  font-size: 14px;
-  box-shadow: 0px 2px 10px #888;
-  text-align: left;
-  margin-right: 25px;
-  background-color: #fff;
-  border-radius: 4px;
-  
-}
-.page .comment_wrap {
-  float: left;
-  display: block;
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 14px;
-  box-shadow: 0px 2px 10px #888;
-  text-align: left;
-  margin-right: 25px;
-  background-color: #fff;
-  border-radius: 4px;
-  width: 960px;
-}
-
-.page .entry-title   {padding: 10px 20px; margin-top: -20px; display: block; font-family: 'OstrichSansMedium'; font-size: 42px; padding: 25px 0; line-height: 52px; letter-spacing: 0.04em; text-align: center; color: #000;}
-
-.page .entry-content p { font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#000; text-decoration: none; padding: 10px 0; text-align: left}
-.page .entry-content span.byline {
-  padding: 10px 0;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-}
-.page .entry-content span.byline a {
-  font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 22px; color:#000; text-decoration: none;
-  height: 32px;
-  line-height: 32px;
-}
-.page .entry-content a { font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 15px; color:#69F; text-decoration: none; font-weight: bold;}
-
-.page .entry-content a:hover{ text-decoration: underline;}
-
-.page .entry-content footer.meta {  text-align: center; margin: 0 auto; padding: 20px 0;}
-
-.page .meta time {font-family: 'Helvetica neue', helvetica, sans-serif; font-size: 18px; color:#000; text-decoration: none; text-transform: uppercase; text-align: center; margin: 0 auto;padding: 15px 0 0 0;}
 
 /*
 | --------------------------------------------------------
