@@ -1,24 +1,30 @@
 <?php get_header(); ?>
-
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+      <div class="border">
+      <div class="entry">
+        <?php the_post_thumbnail('medium'); ?>
+      </div>
+      <?php include (TEMPLATEPATH . '/_/inc/meta_hompage.php' ); ?>
+      
+			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 			
-		<article class="post" id="post-<?php the_ID(); ?>">
 
-		<div class="entry">
-        <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
+			<footer class="postmetadata">
+				<a href="<?php the_permalink() ?>">view now >></a>
+			</footer>
+      </div>
+	</article>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+	<?php endwhile; ?>
 
-			</div>
+	<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
-			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+	<?php else : ?>
 
-		</article>
+		<h2>Not Found</h2>
 
-		<?php endwhile; endif; ?>
-
-<?php get_sidebar(); ?>
+	<?php endif; ?>
 
 <?php get_footer(); ?>

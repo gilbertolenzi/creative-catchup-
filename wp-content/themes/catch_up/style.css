@@ -282,7 +282,7 @@ a.post-edit-link:hover {background: #fcd700; color: #fff; text-shadow: none; tex
   text-decoration: line-through;
 }
 
-.border  {border: 1px solid #888; padding:  0 0 15px 0; display: block; width: 250px; }
+.border  {border: 1px solid #888; padding:  0 0 15px 1px; display: block; width: 250px; }
 
 /*---------------------------------------*/
 /* HP style -----------------------------*/
