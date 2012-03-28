@@ -3,7 +3,8 @@
 * Template Name: fold
 */
  get_header(); ?>
-  <?php query_posts(array('post_type'=>'fold')); ?>
+
+  <?php query_posts(array('category_name'=>'fold')); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
