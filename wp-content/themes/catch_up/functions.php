@@ -47,6 +47,7 @@
       add_theme_support( 'post-thumbnails' ); 
       add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
     }
+    //creating custom POST TYPE "FOLD"
     add_action( 'init', 'create_fold' );
     function create_fold() {
       $labels = array(
@@ -66,6 +67,33 @@
       $supports = array('title', 'editor', 'thumbnail');
     
       register_post_type( 'fold',
+        array(
+          'labels' => $labels,
+          'public' => true,
+          'supports' => $supports
+        )
+      );
+    }
+    //creating custom POST TYPE "BLOGGER"
+    add_action( 'init', 'create_blogger' );
+    function create_blogger() {
+      $labels = array(
+        'name' => _x('blogger', 'post type general name'),
+        'singular_name' => _x('blogger', 'post type singular name'),
+        'add_new' => _x('Add New', 'blogger'),
+        'add_new_item' => __('Add New blogger'),
+        'edit_item' => __('Edit blogger'),
+        'new_item' => __('New blogger'),
+        'view_item' => __('View blogger'),
+        'search_items' => __('Search blogger'),
+        'not_found' =>  __('No blogger has being found'),
+        'not_found_in_trash' => __('No blogger found in Trash'),
+        'parent_item_colon' => ''
+      );
+    
+      $supports = array('title', 'editor', 'thumbnail');
+    
+      register_post_type( 'blogger',
         array(
           'labels' => $labels,
           'public' => true,
